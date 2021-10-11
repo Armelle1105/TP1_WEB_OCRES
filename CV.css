@@ -1,0 +1,400 @@
+*{
+    margin-bottom: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+    background-color :white;
+}
+
+.page {
+    margin: auto;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+}
+
+
+/*  titre */
+
+.contact_titre {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.formation_titre {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.experiences_titre {
+    color: red;
+    border-bottom: 2px solid red;
+}
+.experiences_sous_titre {
+    color: maroon;
+    border-bottom: 1px solid maroon;
+}
+
+.competences_titre {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.competence_sous_classe {
+    color: maroon;
+    border-bottom: 1px solid maroon;
+}
+
+.centres_d_interets_titre {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.contactez-moi_titre {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+/* menu horizontal */
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    
+}
+
+
+nav li {
+    float: left;
+    width: 14%;
+    text-align: center;
+}
+
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: maroon;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.titre_general {
+    display: block;
+    text-decoration: none;
+    color: red;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+/* contact */
+
+.contact_contenu {
+    text-align: center;
+}
+
+.contact_info_titre {
+    color: red;
+}
+
+.objectif_contact {
+    color: red;
+}
+
+
+/*photo animation */
+.photo_de_profil img {
+    width: 200px;
+	height:250px;
+    align-items: center;
+    justify-content: space-around;
+    animation-duration: 2.5s;
+    animation-name: animationImage;
+    animation-iteration-count: initial;
+    -o-animation-direction: alternate;
+}
+
+@keyframes animationImage {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+-webkit-@keyframes animationImage {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+
+/* competences */
+ .conteneur-barre {
+    flex: 0 0 100%;
+    height : 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+  }
+        
+  .barre {
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.competences_info {
+ display: flex;
+flex-flow: row wrap;
+margin-bottom: 30px; 
+}
+
+.competences_info p {
+    flex : 0 0 40%; 
+}
+        
+.c50 {
+    width: 50%;
+    background-color: yellow;
+}
+
+.c55 {
+    width: 55%;
+    background-color: orange;
+}
+
+.c60 {
+    width: 60%;
+    background-color: red;
+}
+
+.c65 {
+    width: 65%;
+    background-color: pink;
+}
+
+.c70 {
+    width: 70%;
+    background-color: purple;
+}
+
+.c75 {
+    width: 75%;
+    background-color: blue;
+}
+
+.c80 {
+    width: 80%;
+    background-color: green;
+}
+
+.c85 {
+    width: 85%;
+    background-color: greenyellow;
+}
+
+/* formations */
+
+.formations {
+    text-align: left;
+  font-size: 15px;
+  line-height: 2;
+}
+.formation_logo img{
+    width: 100px;
+	height:100px;
+    vertical-align: top;
+}
+
+.formation_categorie_card {
+    text-align: center;
+    border-style:groove;
+    border: 2px solid maroon;
+  font-size: 15px;
+  line-height: 2;
+  vertical-align: top;
+  float: left;
+    width: 14%;
+    text-align: center;
+}
+
+.formations_contenu {
+    text-align: left;
+  font-size: 15px;
+  line-height: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+/* experiences */
+
+.experiences {
+    text-align: left;
+  font-size: 15px;
+  line-height: 2;
+}
+.experiences_logo img {
+    width: 100px;
+	height:100px;
+    vertical-align: top;
+}
+
+.experiences_categorie_card {
+    text-align: center;
+    border-style:groove;
+    border: 2px solid maroon;
+  font-size: 15px;
+  line-height: 2;
+  vertical-align: top;
+  float: left;
+    width: 14%;
+    text-align: center;
+}
+
+.experiences_contenu {
+    text-align: left;
+  font-size: 15px;
+  line-height: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+/* centre d'interet */
+
+.centres_d_interets {
+    text-align: left;
+  font-size: 15px;
+  line-height: 2;
+}  
+
+.photo_centres_d_interets img {
+    width: 100px;
+	height:100px;
+    vertical-align: top;
+}
+
+.centres_d_interets_card {
+    text-align: center;
+    border-style:groove;
+    border: 2px solid maroon;
+  font-size: 15px;
+  line-height: 2;
+  vertical-align: top;
+  float: left;
+    width: 14%;
+    text-align: center;
+}
+
+.centres_d_interets_contenu {
+    text-align: left;
+  font-size: 15px;
+  line-height: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+/* card */
+
+.card-title {
+    color: maroon;
+}
+
+/*contactez moi */
+
+.formulaire_contact_mes_infos_titre {
+    color: red;
+}
+
+.contactez-moi_info {
+    color: maroon;
+}
+
+.formulaire_contact_mes_infos_titre_principal {
+    color: maroon;
+}
+
+/* animation bouton */ 
+@keyframes animationBouton {
+    from {
+        color: black;
+    }
+    10% {
+        color: purple;
+    }
+    to {
+        color: red;
+        transform: scale(1.1);
+    }
+}
+
+-webkit-@keyframes animationBouton {
+    from {
+        color: black;
+    }
+    10% {
+        color: purple;
+    }
+    to {
+        color: red;
+        transform: scale(1.1);
+    }
+}
+
+button {
+    padding: 10px 10px;
+    font-size: 1em;
+}
+
+button:hover {
+  animation: animationBouton 1s infinite alternate;
+    -webkit-animation: animationBouton 1s infinite alternate;
+}
+
+
+
+
